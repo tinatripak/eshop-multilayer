@@ -1,0 +1,522 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>BLL</name>
+  </assembly>
+  <members>
+    <member name="M:BLL.Services.OrderService.GetOrder(BLL.BLEntities.BLRoles.BLUser,System.Nullable{System.Int32})">
+      <summary>
+        Return the order by user with id
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="id">Id of order</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.GetOrders(BLL.BLEntities.BLRoles.BLUser)">
+      <summary>
+        Returns all orders by user
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <returns>An IEnumerable of orders</returns>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if user was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.MakeOrder(BLL.BLEntities.BLRoles.BLUser,BLL.BLEntities.BLOrder)">
+      <summary>
+        Create an order
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="order">Orderf that will be added to the order list</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.SetGetToOrder(BLL.BLEntities.BLRoles.BLUser,System.Nullable{System.Int32})">
+      <summary>
+        Sets status "Get" to the order
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="id">THe id of order</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.EditOrder(BLL.BLEntities.BLRoles.BLUser,BLL.BLEntities.BLOrder,System.String)">
+      <summary>
+        Edits the information of order
+        Changes country
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="order"></param>
+      <param name="country"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.EditOrder(BLL.BLEntities.BLRoles.BLUser,BLL.BLEntities.BLOrder,System.Int32)">
+      <summary>
+        Edits the information of order
+        Changes country
+      </summary>
+      <param name="user"></param>
+      <param name="order"></param>
+      <param name="number"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.EditOrder(BLL.BLEntities.BLRoles.BLUser,BLL.BLEntities.BLOrder,BLL.BLEntities.BLOrder)">
+      <summary>
+        Edits the information of order
+        Changes country
+      </summary>
+      <param name="user"></param>
+      <param name="order"></param>
+      <param name="newOrder"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.CancelOrder(BLL.BLEntities.BLRoles.BLUser,System.Nullable{System.Int32})">
+      <summary>
+        Cancel the order
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="id">The id of order</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.OrderService.ChangeStatus(BLL.BLEntities.BLRoles.BLUser,System.Nullable{System.Int32},DAL.Enums.Statuses)">
+      <summary>
+        Change the status of order
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="id">The id of order</param>
+      <param name="status">The status the will be set to the order</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.AddToBasket(BLL.BLEntities.BLRoles.BLUser,System.Nullable{System.Int32})">
+      <summary>
+        Add to basket the product
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="id">The id of product</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.DeleteFromBasket(BLL.BLEntities.BLRoles.BLUser,System.Nullable{System.Int32})">
+      <summary>
+        Delete a product from basket
+      </summary>
+      <param name="user">User whose order will be got</param>
+      <param name="id">The id of product</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.CreateProduct(BLL.BLEntities.BLProduct)">
+      <summary>
+        Creates a product and adds
+        to the list of product
+      </summary>
+      <param name="product">The product that will be added</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.DeleteProduct(BLL.BLEntities.BLProduct)">
+      <summary>
+        Delete a product from the list
+      </summary>
+      <param name="product">the product with this pruduct`s id will be deleted</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.DeleteProduct(System.Nullable{System.Int32})">
+      <summary>
+        Delete a product from the list by id
+      </summary>
+      <param name="id">the product with this id will be deleted</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.EditProduct(System.Nullable{System.Int32},System.String)">
+      <summary>
+        Edit product`s name
+      </summary>
+      <param name="id">The id of product</param>
+      <param name="name">New name</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.EditProduct(System.Nullable{System.Int32},System.Decimal)">
+      <summary>
+        Edit product`s price
+      </summary>
+      <param name="id">The id of product</param>
+      <param name="price">New price</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.EditProduct(System.Nullable{System.Int32},BLL.BLEntities.BLProduct)">
+      <summary>
+        Change a product with id to new product
+      </summary>
+      <param name="id">The id of product</param>
+      <param name="newPro">The new product</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.GetProduct(System.Nullable{System.Int32})">
+      <summary>
+        Get a product by id
+      </summary>
+      <param name="id">Id of searching product</param>
+      <returns>the product with the id</returns>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.ProductService.GetProducts">
+      <summary>
+        Returns all products
+      </summary>
+      <returns>IEnumerable of products</returns>>
+    </member>
+    <member name="M:BLL.Services.ProductService.GetBasket(BLL.BLEntities.BLRoles.BLUser)">
+      <summary>
+        Returns the products which are in the user`s basket
+      </summary>
+      <param name="user">User whose basket will be got</param>
+      <returns>IEnumerable of products</returns>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.Exit">
+      <summary>
+        Exit from the account
+      </summary>
+      <returns>Guest account</returns>
+    </member>
+    <member name="M:BLL.Services.UserService.GetUser(System.Nullable{System.Int32})">
+      <summary>
+        Get user by id
+      </summary>
+      <param name="id">The id of user</param>
+      <returns>The looking for user</returns>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.GetUsers">
+      <summary>
+        Get all users
+      </summary>
+      <returns>IEnumerable of users</returns>
+    </member>
+    <member name="M:BLL.Services.UserService.SetIn(System.String,System.String)">
+      <summary>
+        Sign in to the registered account
+      </summary>
+      <param name="email"></param>
+      <param name="password"></param>
+      <returns></returns>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.IsUsed(System.String)">
+      <summary>
+        Checking of using the email
+      </summary>
+      <param name="email"></param>
+      <returns>true if email is used, false if the email is free</returns>
+    </member>
+    <member name="M:BLL.Services.UserService.GetByEmail(System.String)">
+      <summary>
+        Get user by email
+      </summary>
+      <param name="email"></param>
+      <returns>User</returns>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.SetUp(System.String,System.String,System.String,System.String,System.Int64)">
+      <summary>
+        Sign up with the card
+      </summary>
+      <param name="firstname"></param>
+      <param name="lastname"></param>
+      <param name="email"></param>
+      <param name="password"></param>
+      <param name="card">Number of card</param>
+      <returns></returns>
+    </member>
+    <member name="M:BLL.Services.UserService.SetUp(System.String,System.String,System.String,System.String)">
+      <summary>
+        Sign up without money and card
+      </summary>
+      <param name="firstname"></param>
+      <param name="lastname"></param>
+      <param name="email"></param>
+      <param name="password"></param>
+      <returns></returns>
+    </member>
+    <member name="M:BLL.Services.UserService.AddUser(BLL.BLEntities.BLRoles.BLUser)">
+      <summary>
+        Adds user to the list
+      </summary>
+      <param name="user">The user that will be added</param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.ChangeUsersInfo(BLL.BLEntities.BLRoles.BLUser,System.String,System.String)">
+      <summary>
+        Changes name and last of user
+      </summary>
+      <param name="user"></param>
+      <param name="name"></param>
+      <param name="lastname"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.ChangeUsersPassword(BLL.BLEntities.BLRoles.BLUser,System.String)">
+      <summary>
+        Changes a password of user
+      </summary>
+      <param name="user"></param>
+      <param name="password"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.ChangeUsersInfo(BLL.BLEntities.BLRoles.BLUser,System.Decimal)">
+      <summary>
+        Changes money
+      </summary>
+      <param name="user"></param>
+      <param name="money"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.ChangeUsersInfo(BLL.BLEntities.BLRoles.BLUser,BLL.BLEntities.BLRoles.BLUser)">
+      <summary>
+        Changes to new user
+      </summary>
+      <param name="user"></param>
+      <param name="newUser"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+    <member name="M:BLL.Services.UserService.ChangeUsersEmail(BLL.BLEntities.BLRoles.BLUser,System.String)">
+      <summary>
+        Changes the email of user
+      </summary>
+      <param name="user"></param>
+      <param name="email"></param>
+      <exception cref="T:BLL.Exceptions.ValidateException">Thrown if parameter was null</exception>
+    </member>
+  </members>
+    <assembly>
+        <name>DAL</name>
+    </assembly>
+    <members>
+        <member name="T:DAL.DataBase.Context">
+            <summary>
+            DBContext
+            </summary>
+        </member>
+        <member name="P:DAL.DataBase.Context.Products">
+            <summary>
+            Products
+            </summary>
+        </member>
+        <member name="P:DAL.DataBase.Context.Users">
+            <summary>
+            Users
+            </summary>
+        </member>
+        <member name="M:DAL.DataBase.Context.#ctor(System.Collections.Generic.List{DAL.Entities.Product},System.Collections.Generic.List{DAL.Entities.Roles.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="products"></param>
+            <param name="users"></param>
+        </member>
+        <member name="T:DAL.Enums.Statuses">
+            <summary>
+            Statuses enum for status
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Order">
+            <summary>
+            Class order
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Product">
+            <summary>
+            Class product
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.Admin">
+            <summary>
+            Admin role class
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.Guest">
+            <summary>
+            Guest role class
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.RegisteredUser">
+            <summary>
+            Account role for registered user
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.User">
+            <summary>
+            User role class
+            </summary>
+        </member>
+        <member name="T:DAL.Interfaces.IRepository`1">
+            <summary>
+            Interface for database
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.GetAll">
+            <summary>
+            Get all
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Get(System.Int32)">
+            <summary>
+            Get by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Find(System.Func{`0,System.Boolean})">
+            <summary>
+            Find by predicate
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Create(`0)">
+            <summary>
+            Create an item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Update(`0)">
+            <summary>
+            update an item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Delete(`0)">
+            <summary>
+            Delete an item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Delete(System.Int32)">
+            <summary>
+            Delete by id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:DAL.Repositories.DBWork">
+            <summary>
+            Class for work with DataBase
+            </summary>
+        </member>
+        <member name="M:DAL.Repositories.DBWork.#ctor(System.Collections.Generic.List{DAL.Entities.Product},System.Collections.Generic.List{DAL.Entities.Roles.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="products"></param>
+            <param name="users"></param>
+        </member>
+        <member name="P:DAL.Repositories.DBWork.Products">
+            <summary>
+            Get Products
+            </summary>
+        </member>
+        <member name="P:DAL.Repositories.DBWork.Users">
+            <summary>
+            Get Users
+            </summary>
+        </member>
+        <member name="M:DAL.Repositories.DBWork.Save">
+            <summary>
+            Save DataBase
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.ProductRepository">
+            <summary>
+            Implemetation for product servise
+            </summary>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.#ctor(DAL.DataBase.Context)">
+            <summary>
+            Conection with DB
+            </summary>
+            <param name="db"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Find(System.Func{DAL.Entities.Product,System.Boolean})">
+            <summary>
+            Retrives ienumerable of product
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Get(System.Int32)">
+            <summary>
+            get product by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.GetAll">
+            <summary>
+            get all products
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Create(DAL.Entities.Product)">
+            <summary>
+            Create a product
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Delete(DAL.Entities.Product)">
+            <summary>
+            Delete a product
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Update(DAL.Entities.Product)">
+            <summary>
+            Update a product
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Delete(System.Int32)">
+            <summary>
+            Delete a product by id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Find(System.Func{DAL.Entities.Roles.User,System.Boolean})">
+            <summary>
+            Retrives ienumerable of user
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Get(System.Int32)">
+            <summary>
+            Get user by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.GetAll">
+            <summary>
+            Get all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Create(DAL.Entities.Roles.User)">
+            <summary>
+            Create an user
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Delete(DAL.Entities.Roles.User)">
+            <summary>
+            Delete an user
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Update(DAL.Entities.Roles.User)">
+            <summary>
+            Update the user by id
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Delete(System.Int32)">
+            <summary>
+            Delete an user by id
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DAL</name>
+    </assembly>
+    <members>
+        <member name="T:DAL.DataBase.Context">
+            <summary>
+            DBContext
+            </summary>
+        </member>
+        <member name="P:DAL.DataBase.Context.Products">
+            <summary>
+            Products
+            </summary>
+        </member>
+        <member name="P:DAL.DataBase.Context.Users">
+            <summary>
+            Users
+            </summary>
+        </member>
+        <member name="M:DAL.DataBase.Context.#ctor(System.Collections.Generic.List{DAL.Entities.Product},System.Collections.Generic.List{DAL.Entities.Roles.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="products"></param>
+            <param name="users"></param>
+        </member>
+        <member name="T:DAL.Enums.Statuses">
+            <summary>
+            Statuses enum for status
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Order">
+            <summary>
+            Class order
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Product">
+            <summary>
+            Class product
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.Admin">
+            <summary>
+            Admin role class
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.Guest">
+            <summary>
+            Guest role class
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.RegisteredUser">
+            <summary>
+            Account role for registered user
+            </summary>
+        </member>
+        <member name="T:DAL.Entities.Roles.User">
+            <summary>
+            User role class
+            </summary>
+        </member>
+        <member name="T:DAL.Interfaces.IRepository`1">
+            <summary>
+            Interface for database
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.GetAll">
+            <summary>
+            Get all
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Get(System.Int32)">
+            <summary>
+            Get by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Find(System.Func{`0,System.Boolean})">
+            <summary>
+            Find by predicate
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Create(`0)">
+            <summary>
+            Create an item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Update(`0)">
+            <summary>
+            update an item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Delete(`0)">
+            <summary>
+            Delete an item
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Interfaces.IRepository`1.Delete(System.Int32)">
+            <summary>
+            Delete by id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:DAL.Repositories.DBWork">
+            <summary>
+            Class for work with DataBase
+            </summary>
+        </member>
+        <member name="M:DAL.Repositories.DBWork.#ctor(System.Collections.Generic.List{DAL.Entities.Product},System.Collections.Generic.List{DAL.Entities.Roles.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="products"></param>
+            <param name="users"></param>
+        </member>
+        <member name="P:DAL.Repositories.DBWork.Products">
+            <summary>
+            Get Products
+            </summary>
+        </member>
+        <member name="P:DAL.Repositories.DBWork.Users">
+            <summary>
+            Get Users
+            </summary>
+        </member>
+        <member name="M:DAL.Repositories.DBWork.Save">
+            <summary>
+            Save DataBase
+            </summary>
+        </member>
+        <member name="T:DAL.Repositories.ProductRepository">
+            <summary>
+            Implemetation for product servise
+            </summary>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.#ctor(DAL.DataBase.Context)">
+            <summary>
+            Conection with DB
+            </summary>
+            <param name="db"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Find(System.Func{DAL.Entities.Product,System.Boolean})">
+            <summary>
+            Retrives ienumerable of product
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Get(System.Int32)">
+            <summary>
+            get product by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.GetAll">
+            <summary>
+            get all products
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Create(DAL.Entities.Product)">
+            <summary>
+            Create a product
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Delete(DAL.Entities.Product)">
+            <summary>
+            Delete a product
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Update(DAL.Entities.Product)">
+            <summary>
+            Update a product
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.ProductRepository.Delete(System.Int32)">
+            <summary>
+            Delete a product by id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Find(System.Func{DAL.Entities.Roles.User,System.Boolean})">
+            <summary>
+            Retrives ienumerable of user
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Get(System.Int32)">
+            <summary>
+            Get user by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.GetAll">
+            <summary>
+            Get all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Create(DAL.Entities.Roles.User)">
+            <summary>
+            Create an user
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Delete(DAL.Entities.Roles.User)">
+            <summary>
+            Delete an user
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Update(DAL.Entities.Roles.User)">
+            <summary>
+            Update the user by id
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:DAL.Repositories.UserRepository.Delete(System.Int32)">
+            <summary>
+            Delete an user by id
+            </summary>
+            <param name="id"></param>
+        </member>
+    </members>
+</doc>

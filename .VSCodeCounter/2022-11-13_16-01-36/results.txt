@@ -1,0 +1,157 @@
+Date : 2022-11-13 16:01:36
+Directory : c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer
+Total : 85 files,  9926 codes, 481 comments, 243 blanks, all 10650 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |         12 |      6,362 |          0 |          0 |      6,362 |
+| C#         |         51 |      2,107 |        481 |        214 |      2,802 |
+| XML        |         18 |      1,445 |          0 |         25 |      1,470 |
+| Properties |          4 |         12 |          0 |          4 |         16 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                                 | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                                    |         85 |      9,926 |        481 |        243 |     10,650 |
+| BLL                                                                                                                                                  |         26 |      1,800 |        230 |         88 |      2,118 |
+| BLL\BLEntities                                                                                                                                       |          6 |         77 |          0 |         12 |         89 |
+| BLL\BLEntities\BLRoles                                                                                                                               |          4 |         48 |          0 |          8 |         56 |
+| BLL\Exceptions                                                                                                                                       |          1 |         22 |          0 |          5 |         27 |
+| BLL\Interfaces                                                                                                                                       |          3 |         67 |          0 |          7 |         74 |
+| BLL\Services                                                                                                                                         |          3 |        578 |        208 |         43 |        829 |
+| BLL\bin                                                                                                                                              |          3 |        597 |          0 |          2 |        599 |
+| BLL\bin\Debug                                                                                                                                        |          3 |        597 |          0 |          2 |        599 |
+| BLL\bin\Debug\netcoreapp3.1                                                                                                                          |          3 |        597 |          0 |          2 |        599 |
+| BLL\obj                                                                                                                                              |          9 |        444 |         22 |         13 |        479 |
+| BLL\obj\Debug                                                                                                                                        |          3 |         15 |         11 |          7 |         33 |
+| BLL\obj\Debug\netcoreapp3.1                                                                                                                          |          3 |         15 |         11 |          7 |         33 |
+| BLL\obj\Release                                                                                                                                      |          2 |         12 |         11 |          6 |         29 |
+| BLL\obj\Release\netcoreapp3.1                                                                                                                        |          2 |         12 |         11 |          6 |         29 |
+| ConsoleEShop                                                                                                                                         |         18 |      1,362 |         51 |         44 |      1,457 |
+| ConsoleEShopTest                                                                                                                                     |         11 |      5,385 |         22 |         49 |      5,456 |
+| ConsoleEShopTest\obj                                                                                                                                 |          9 |      5,193 |         22 |         13 |      5,228 |
+| ConsoleEShopTest\obj\Debug                                                                                                                           |          3 |         15 |         11 |          7 |         33 |
+| ConsoleEShopTest\obj\Debug\netcoreapp3.1                                                                                                             |          3 |         15 |         11 |          7 |         33 |
+| ConsoleEShopTest\obj\Release                                                                                                                         |          2 |         12 |         11 |          6 |         29 |
+| ConsoleEShopTest\obj\Release\netcoreapp3.1                                                                                                           |          2 |         12 |         11 |          6 |         29 |
+| ConsoleEShop\EntitiesView                                                                                                                            |          6 |         85 |         18 |         12 |        115 |
+| ConsoleEShop\EntitiesView\Roles                                                                                                                      |          4 |         52 |         12 |          8 |         72 |
+| ConsoleEShop\Exceptions                                                                                                                              |          1 |         16 |         10 |          2 |         28 |
+| ConsoleEShop\obj                                                                                                                                     |          9 |        515 |         22 |         13 |        550 |
+| ConsoleEShop\obj\Debug                                                                                                                               |          3 |         15 |         11 |          7 |         33 |
+| ConsoleEShop\obj\Debug\netcoreapp3.1                                                                                                                 |          3 |         15 |         11 |          7 |         33 |
+| ConsoleEShop\obj\Release                                                                                                                             |          2 |         12 |         11 |          6 |         29 |
+| ConsoleEShop\obj\Release\netcoreapp3.1                                                                                                               |          2 |         12 |         11 |          6 |         29 |
+| DAL                                                                                                                                                  |         26 |      1,226 |        178 |         62 |      1,466 |
+| DAL\DataBase                                                                                                                                         |          1 |         21 |         14 |          2 |         37 |
+| DAL\Entities                                                                                                                                         |          7 |         90 |         21 |         15 |        126 |
+| DAL\Entities\Enums                                                                                                                                   |          1 |         16 |          3 |          2 |         21 |
+| DAL\Entities\Roles                                                                                                                                   |          4 |         48 |         12 |          8 |         68 |
+| DAL\Interfaces                                                                                                                                       |          2 |         30 |         34 |          4 |         68 |
+| DAL\Repositories                                                                                                                                     |          3 |        115 |         87 |         22 |        224 |
+| DAL\bin                                                                                                                                              |          2 |        264 |          0 |          1 |        265 |
+| DAL\bin\Debug                                                                                                                                        |          2 |        264 |          0 |          1 |        265 |
+| DAL\bin\Debug\netcoreapp3.1                                                                                                                          |          2 |        264 |          0 |          1 |        265 |
+| DAL\obj                                                                                                                                              |          9 |        175 |         22 |         13 |        210 |
+| DAL\obj\Debug                                                                                                                                        |          3 |         15 |         11 |          7 |         33 |
+| DAL\obj\Debug\netcoreapp3.1                                                                                                                          |          3 |         15 |         11 |          7 |         33 |
+| DAL\obj\Release                                                                                                                                      |          2 |         12 |         11 |          6 |         29 |
+| DAL\obj\Release\netcoreapp3.1                                                                                                                        |          2 |         12 |         11 |          6 |         29 |
+| obj                                                                                                                                                  |          4 |        153 |          0 |          0 |        153 |
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                                             | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\BLEntities\BLOrder.cs                                                                           | C#         |         15 |          0 |          2 |         17 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\BLEntities\BLProduct.cs                                                                         | C#         |         14 |          0 |          2 |         16 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\BLEntities\BLRoles\BLAdmin.cs                                                                   | C#         |         10 |          0 |          2 |         12 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\BLEntities\BLRoles\BLGuest.cs                                                                   | C#         |          9 |          0 |          2 |         11 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\BLEntities\BLRoles\BLRegisteredUser.cs                                                          | C#         |          9 |          0 |          2 |         11 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\BLEntities\BLRoles\BLUser.cs                                                                    | C#         |         20 |          0 |          2 |         22 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\BLL.csproj                                                                                      | XML        |         15 |          0 |          6 |         21 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\Exceptions\ValidateException.cs                                                                 | C#         |         22 |          0 |          5 |         27 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\Interfaces\IOrderService.cs                                                                     | C#         |         21 |          0 |          3 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\Interfaces\IProductService.cs                                                                   | C#         |         22 |          0 |          2 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\Interfaces\IUserService.cs                                                                      | C#         |         24 |          0 |          2 |         26 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\Services\OrderService.cs                                                                        | C#         |        181 |         61 |         13 |        255 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\Services\ProductService.cs                                                                      | C#         |        161 |         62 |         13 |        236 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\Services\UserService.cs                                                                         | C#         |        236 |         85 |         17 |        338 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json                                                           | JSON       |         72 |          0 |          0 |         72 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\bin\Debug\netcoreapp3.1\BLL.xml                                                                 | XML        |        284 |          0 |          1 |        285 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\bin\Debug\netcoreapp3.1\DAL.xml                                                                 | XML        |        241 |          0 |          1 |        242 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\BLL.csproj.nuget.dgspec.json                                                                | JSON       |        128 |          0 |          0 |        128 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\BLL.csproj.nuget.g.props                                                                    | XML        |         15 |          0 |          0 |         15 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\BLL.csproj.nuget.g.targets                                                                  | XML        |          2 |          0 |          0 |          2 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                          | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs                                                     | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\Debug\netcoreapp3.1\BLL.GeneratedMSBuildEditorConfig.editorconfig                           | Properties |          3 |          0 |          1 |          4 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                        | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\Release\netcoreapp3.1\BLL.AssemblyInfo.cs                                                   | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\BLL\obj\project.assets.json                                                                         | JSON       |        272 |          0 |          0 |        272 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\ConsoleEShopTest.csproj                                                            | XML        |         16 |          0 |          6 |         22 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\Tests.cs                                                                           | C#         |        176 |          0 |         30 |        206 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\ConsoleEShopTest.csproj.nuget.dgspec.json                                      | JSON       |        266 |          0 |          0 |        266 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\ConsoleEShopTest.csproj.nuget.g.props                                          | XML        |         25 |          0 |          0 |         25 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\ConsoleEShopTest.csproj.nuget.g.targets                                        | XML        |          8 |          0 |          0 |          8 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs             | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\Debug\netcoreapp3.1\ConsoleEShopTest.AssemblyInfo.cs                           | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\Debug\netcoreapp3.1\ConsoleEShopTest.GeneratedMSBuildEditorConfig.editorconfig | Properties |          3 |          0 |          1 |          4 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs           | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\Release\netcoreapp3.1\ConsoleEShopTest.AssemblyInfo.cs                         | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShopTest\obj\project.assets.json                                                            | JSON       |      4,867 |          0 |          0 |      4,867 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\ConsoleEShop.csproj                                                                    | XML        |         12 |          0 |          5 |         17 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\EntitiesView\OrderView.cs                                                              | C#         |         15 |          3 |          2 |         20 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\EntitiesView\ProductView.cs                                                            | C#         |         18 |          3 |          2 |         23 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\EntitiesView\Roles\AdminView.cs                                                        | C#         |         10 |          3 |          2 |         15 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\EntitiesView\Roles\GuestView.cs                                                        | C#         |          9 |          3 |          2 |         14 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\EntitiesView\Roles\RegisteredUserView.cs                                               | C#         |          9 |          3 |          2 |         14 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\EntitiesView\Roles\UserView.cs                                                         | C#         |         24 |          3 |          2 |         29 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\Exceptions\AccessException.cs                                                          | C#         |         16 |         10 |          2 |         28 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\Program.cs                                                                             | C#         |        734 |          1 |         12 |        747 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\ConsoleEShop.csproj.nuget.dgspec.json                                              | JSON       |        187 |          0 |          0 |        187 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\ConsoleEShop.csproj.nuget.g.props                                                  | XML        |         15 |          0 |          0 |         15 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\ConsoleEShop.csproj.nuget.g.targets                                                | XML        |          2 |          0 |          0 |          2 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                 | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\Debug\netcoreapp3.1\ConsoleEShop.AssemblyInfo.cs                                   | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\Debug\netcoreapp3.1\ConsoleEShop.GeneratedMSBuildEditorConfig.editorconfig         | Properties |          3 |          0 |          1 |          4 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs               | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\Release\netcoreapp3.1\ConsoleEShop.AssemblyInfo.cs                                 | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\ConsoleEShop\obj\project.assets.json                                                                | JSON       |        284 |          0 |          0 |        284 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\ConsoleEShop.xml                                                                                | XML        |        522 |          0 |          1 |        523 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\DAL.csproj                                                                                      | XML        |          9 |          0 |          4 |         13 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\DataBase\Context.cs                                                                             | C#         |         21 |         14 |          2 |         37 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Entities\Enums\Statuses.cs                                                                      | C#         |         16 |          3 |          2 |         21 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Entities\Order.cs                                                                               | C#         |         12 |          3 |          3 |         18 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Entities\Product.cs                                                                             | C#         |         14 |          3 |          2 |         19 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Entities\Roles\Admin.cs                                                                         | C#         |         10 |          3 |          2 |         15 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Entities\Roles\Guest.cs                                                                         | C#         |          9 |          3 |          2 |         14 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Entities\Roles\RegisteredUser.cs                                                                | C#         |          9 |          3 |          2 |         14 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Entities\Roles\User.cs                                                                          | C#         |         20 |          3 |          2 |         25 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Interfaces\IRepository.cs                                                                       | C#         |         16 |         34 |          2 |         52 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Interfaces\IWork.cs                                                                             | C#         |         14 |          0 |          2 |         16 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Repositories\DBWork.cs                                                                          | C#         |         41 |         18 |          4 |         63 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Repositories\ProductRepository.cs                                                               | C#         |         36 |         38 |          9 |         83 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\Repositories\UserRepository.cs                                                                  | C#         |         38 |         31 |          9 |         78 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json                                                           | JSON       |         23 |          0 |          0 |         23 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\bin\Debug\netcoreapp3.1\DAL.xml                                                                 | XML        |        241 |          0 |          1 |        242 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\DAL.csproj.nuget.dgspec.json                                                                | JSON       |         63 |          0 |          0 |         63 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\DAL.csproj.nuget.g.props                                                                    | XML        |         15 |          0 |          0 |         15 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\DAL.csproj.nuget.g.targets                                                                  | XML        |          2 |          0 |          0 |          2 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                          | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs                                                     | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig                           | Properties |          3 |          0 |          1 |          4 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs                        | C#         |          3 |          1 |          1 |          5 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\Release\netcoreapp3.1\DAL.AssemblyInfo.cs                                                   | C#         |          9 |         10 |          5 |         24 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\DAL\obj\project.assets.json                                                                         | JSON       |         68 |          0 |          0 |         68 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\obj\ConsoleEShop.csproj.nuget.dgspec.json                                                           | JSON       |         63 |          0 |          0 |         63 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\obj\ConsoleEShop.csproj.nuget.g.props                                                               | XML        |         15 |          0 |          0 |         15 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\obj\ConsoleEShop.csproj.nuget.g.targets                                                             | XML        |          6 |          0 |          0 |          6 |
+| c:\Users\Кристина\Desktop\ConsoleEShopMultiLayer\obj\project.assets.json                                                                             | JSON       |         69 |          0 |          0 |         69 |
+| Total                                                                                                                                                |            |      9,926 |        481 |        243 |     10,650 |
++------------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
